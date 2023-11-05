@@ -1508,6 +1508,7 @@ input, select, textarea {
 			display: block;
 			width: 100%;
             border: solid 6px #ebebeb !important;
+            
 		}
 
 		.image.left {
