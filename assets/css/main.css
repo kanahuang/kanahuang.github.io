@@ -1531,6 +1531,12 @@ input, select, textarea {
 
 			}
 
+		.round-image {
+			border-radius: 50%;
+			width: 100%; /* Adjust as necessary to fit your layout */
+			height: auto; /* Maintains aspect ratio */
+		}
+
 /* List */
 
 	ul {
