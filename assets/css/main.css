@@ -1502,11 +1502,13 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			
 		}
 
 		.image.featured {
 			display: block;
 			width: 100%;
+			height: auto;
             border: solid 6px #ebebeb !important;
 
 		}
@@ -1535,6 +1537,24 @@ input, select, textarea {
 			border-radius: 50%;
 			width: 100%; /* Adjust as necessary to fit your layout */
 			height: auto; /* Maintains aspect ratio */
+		}
+
+		.image-featured {
+			display: flex;
+			justify-content: center; /* Horizontally center the image */
+			align-items: center;     /* Vertically center the image */
+			width: 400px;            /* Set the width of the container */
+			height: 400px;           /* Set the height of the container */
+			border: 5px solid #ebebeb; /* Optional frame around the container */
+			overflow: hidden;        /* Ensures the image doesn't overflow */
+			text-decoration: none;   /* Removes the underline from the anchor */
+		}
+		
+		/* Image */
+		.img-feature {
+			width: 100%;             /* Image will scale to fit the container */
+			height: 100%;            /* Ensures the image fills the height */
+			object-fit: contain;     /* Keeps the image aspect ratio */
 		}
 
 /* List */
