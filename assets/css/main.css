@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f0f0;
+		background: #FAFAFA;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -102,13 +102,13 @@ input, select, textarea {
 		font-weight: 300;
 		color: #494545;
 		line-height: 1.4em;
-		font-size: 13pt;
+		font-size: 14pt;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #888;
+		font-weight: 550;
+		/* text-transform: uppercase; */
+		color: #494545;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -118,17 +118,17 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.65em;
+		font-size: 1.5em;
 		font-weight: 400;
 		letter-spacing: 4px;
-		margin: 0 0 1.5em 0;
-		line-height: 1.75em;
+		margin: 0 0 1em 0;
+		line-height: 0.75em;
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.2em;
 		letter-spacing: 2px;
-		margin: 0 0 1.25em 0;
+		margin: 0 0 1em 0;
 	}
 
 	a {
@@ -149,17 +149,17 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: #89CFF0;
+			color: #81D8D0;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #89CFF0;
+				color: #81D8D0;
 			}
 
 	strong, b {
 		font-weight: 600;
-		color: #666;
+		color: #47a3ca;
 	}
 
 	em, i {
@@ -190,8 +190,13 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
-		margin-bottom: 2em;
+		font-weight: 400;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 0.85em;
+		color: #2B2B2B;
+		line-height: 1.6;
+		text-align: left;
+		margin-bottom: 1.5em;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -1535,7 +1540,7 @@ input, select, textarea {
 
 		.round-image {
 			border-radius: 50%;
-			width: 100%; /* Adjust as necessary to fit your layout */
+			width: 95%; /* Adjust as necessary to fit your layout */
 			height: auto; /* Maintains aspect ratio */
 		}
 
@@ -1556,6 +1561,13 @@ input, select, textarea {
 			height: 100%;            /* Ensures the image fills the height */
 			object-fit: contain;     /* Keeps the image aspect ratio */
 		}
+		.square-image {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 1 / 1;
+			border-radius: 0; /* removes the circular border */
+			object-fit: cover; /* ensures the image fills the square nicely */
+		  }
 
 /* List */
 
@@ -1940,18 +1952,19 @@ input, select, textarea {
 	}
 
 		#header > .container {
-			padding: 14em 0 7em 0;
-			border-bottom: solid 2px #e5e5e5;
-			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+			padding: 10em 0 3em 0;
+			/* border-bottom: solid 2px #e5e5e5; */
+			/* box-shadow: inset 0px -8px 0px 0px #efeeee, inset 0px -10px 0px 0px #e5e5e5df; */
 		}
 
 		#header h1 {
 			font-family: 'Arvo';
-			font-weight: 700;
-			color: #89CFF0;
+			font-weight: 500;
+			color: #87cded;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
-			letter-spacing: 13px;
+			font-size: 2.8em;
+			/* text-align: center; */
+			letter-spacing: 10px;
 		}
 
 			#header h1 a {
@@ -1960,10 +1973,10 @@ input, select, textarea {
 
 		#header p {
 			font-weight: 400;
-			color: #888;
+			color: #2B2B2B;
 			margin: 2.5em 0 0 0;
 			font-size: 0.85em;
-			letter-spacing: 3px;
+			letter-spacing: 1px;
 			text-align: center;
 		}
 
@@ -2190,7 +2203,7 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
-		padding: 6em 0;
+		/* padding: 6em 0; */
 	}
 
 /* Content */
@@ -2262,10 +2275,10 @@ input, select, textarea {
 /* Copyright */
 
 	#copyright {
-		border-top: solid 2px #e5e5e5;
+		/* border-top: solid 2px #e5e5e5; */
 		text-align: center;
-		margin-top: 6em;
-		padding-top: 4em;
+		margin-top: 1em;
+		/* padding-top: 4em; */
 	}
 
 /* XLarge */
